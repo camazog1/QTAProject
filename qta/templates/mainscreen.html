@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                background-color: #023373;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My project</title>
+    </head>
+    
+    <body>
+
+        <img style="width: 213px; height: 125px" src="https://via.placeholder.com/213x125" />
+        <div style="color: white; font-size: 25px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">Home    Aplication    About    Service    More</div>
+        <div style="width: 935px; height: 630px; position: relative">
+          <div style="width: 284px; height: 630px; left: 0px; top: 0px; position: absolute; background: #63E0FF"></div>
+          <div style="width: 648px; height: 578px; left: 286px; top: 52px; position: absolute; background: #F5FCFF"></div>
+          <div style="width: 648px; height: 50px; left: 286px; top: 0px; position: absolute; background: #63E0FF"></div>
+          <div style="width: 138px; height: 50px; left: 286px; top: 0px; position: absolute"></div>
+          <div style="left: 4px; top: 3px; position: absolute; color: #023373; font-size: 15px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">Version 1.0</div>
+          <div style="width: 83px; height: 50px; left: 851px; top: 0px; position: absolute; color: #023373; font-size: 23px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">New<br/>Ticket</div>
+          <div style="width: 50px; height: 0px; left: 842px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px black solid"></div>
+          <img style="width: 284px; height: 189.43px; left: 0px; top: 440.57px; position: absolute" src="https://via.placeholder.com/284x189" />
+          <div style="width: 284px; height: 0px; left: 0px; top: 441px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 284px; height: 0px; left: 0px; top: 341px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 284px; height: 0px; left: 0px; top: 241px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 284px; height: 0px; left: 0px; top: 141px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 648px; height: 0px; left: 286px; top: 196px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 648px; height: 0px; left: 287px; top: 341px; position: absolute; border: 1px black solid"></div>
+          <div style="width: 648px; height: 0px; left: 286px; top: 486px; position: absolute; border: 1px black solid"></div>
+          <div style="left: 15px; top: 375px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">Completed</div>
+          <div style="left: 15px; top: 275px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">In Progress</div>
+          <div style="left: 15px; top: 173px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">New</div>
+          <div style="left: 223px; top: 173px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">8</div>
+          <div style="left: 223px; top: 275px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">2</div>
+          <div style="left: 223px; top: 375px; position: absolute; color: #023373; font-size: 30px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">1</div>
+          <div style="left: 15px; top: 78px; position: absolute; color: #023373; font-size: 35px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">Hi, Ana Giraldo</div>
+         <div style="left: 579px; top: 8px; position: absolute; color: #023373; font-size: 35px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">New</div>
+         
+         <div class="container" style="width: 638px; height: 139px; left: 286px; top: 52px; position: absolute">
+            {% for ticket in tickets %}
+            <div style="width: 20px; height: 0px; left: 98px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px black solid"></div>
+            <div style="width: 80px; height: 0px; left: 7px; top: 36px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px black solid"></div>
+            <div style="width: 98px; height: 20px; left: 0px; top: 0px; position: absolute; text-align: center; color: #027333; font-size: 18px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">{{ ticket.ticket_number }}</div>
+            <div style="width: 20px; height: 0px; left: 201px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px black solid"></div>
+            <div style="width: 98px; height: 20px; left: 103px; top: 0px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">{{ ticket.equipment }}</div>
+            <div style="width: 98px; height: 20px; left: 27px; top: 119px; position: absolute; color: black; font-size: 12px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">{{ ticket.contact_name }}</div>
+            <div style="width: 397px; height: 80px; left: 14px; top: 36px; position: absolute; color: black; font-size: 15px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">{{ ticket.discussion }}</div>
+            <div style="width: 194px; height: 53px; left: 444px; top: 36px; position: absolute"><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Call back Time:</span><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 400; word-wrap: break-word">{{ ticket.call_time }}<br/></span><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Elapse Time:</span><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 400; word-wrap: break-word"> -9 Hrs y 48 Min<br/></span><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Priority:</span><span style="color: black; font-size: 12px; font-family: Poppins; font-weight: 400; word-wrap: break-word">{{ ticket.priority }}</span></div>
+            <div style="width: 20px; height: 0px; left: 304px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 4px black solid"></div>
+            <div style="width: 98px; height: 20px; left: 206px; top: 0px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">Clinica CardioVid</div>
+            <div style="width: 15px; height: 15px; left: 7px; top: 122px; position: absolute; background: rgba(217, 217, 217, 0); border-radius: 9999px; border: 1px #023373 solid"></div>
+            <div style="width: 97px; height: 41px; left: 444px; top: 96px; position: absolute; background: #023373; border-radius: 100px"></div>
+            <div style="width: 40px; height: 13px; left: 473px; top: 110px; position: absolute; color: white; font-size: 15px; font-family: Port Lligat Sans; font-weight: 400; word-wrap: break-word">MORE</div>
+            {% endfor %}
+            <br />
+        </div>
+    </body>
+</html>
